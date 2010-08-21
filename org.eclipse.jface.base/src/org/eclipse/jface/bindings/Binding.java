@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.StringWriter;
 
 import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.jface.util.Util;
+import org.eclipse.jface.base.Util;
 
 /**
  * <p>
@@ -214,7 +214,7 @@ public abstract class Binding {
 	 * @return <code>true</code> if the receiver deletes the binding defined by
 	 * 			the argument.
 	 */
-	final boolean deletes(final Binding binding) {
+	public final boolean deletes(final Binding binding) {
 		boolean deletes = true;
 		deletes &= Util.equals(getContextId(), binding.getContextId());
 		deletes &= Util.equals(getTriggerSequence(), binding
