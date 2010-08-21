@@ -4,5 +4,7 @@ Bundle-Name: Base
 Bundle-SymbolicName: org.eclipse.jface.base
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
-Export-Package: org.eclipse.jface.bindings
-Require-Bundle: org.eclipse.core.commands;bundle-version="[3.4.0,4.0.0)";visibility:=reexport
+Export-Package: org.eclipse.jface.bindings,
+ org.eclipse.jface.util
+Require-Bundle: org.eclipse.core.commands;bundle-version="[3.4.0,4.0.0)";visibility:=reexport,
+ org.eclipse.equinox.common;bundle-version="[3.2.0,4.0.0)"
