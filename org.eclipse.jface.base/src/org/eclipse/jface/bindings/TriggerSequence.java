@@ -10,7 +10,7 @@
  *******************************************************************************/
 package org.eclipse.jface.bindings;
 
-import org.eclipse.jface.base.Util;
+import org.eclipse.jface.internal.base.Util;
 
 /**
  * <p>

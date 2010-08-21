@@ -1,4 +1,4 @@
-package org.eclipse.jface.base;
+package org.eclipse.jface.internal.base;
 
 public class Util {
 	/**

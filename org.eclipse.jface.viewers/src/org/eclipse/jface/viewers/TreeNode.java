@@ -11,7 +11,7 @@
 
 package org.eclipse.jface.viewers;
 
-import org.eclipse.jface.util.Util;
+import org.eclipse.jface.internal.base.Util;
 
 /**
  * A simple data structure that is useful for implemented tree models. This can

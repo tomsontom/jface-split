@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.StringWriter;
 
 import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.jface.base.Util;
+import org.eclipse.jface.internal.base.Util;
 
 /**
  * <p>

@@ -42,8 +42,6 @@ public class Policy {
 
 	private static ILogger log;
 
-	private static Comparator viewerComparator;
-
 	private static AnimatorFactory animatorFactory;
 
 	/**
@@ -200,10 +198,7 @@ public class Policy {
 	 * @since 3.2
 	 */
 	public static Comparator getComparator() {
-		if (viewerComparator == null) {
-			viewerComparator = getDefaultComparator();
-		}
-		return viewerComparator;
+		return org.eclipse.jface.internal.base.Policy.getComparator();
 	}
 
 	/**
@@ -214,8 +209,7 @@ public class Policy {
 	 * @since 3.2
 	 */
 	public static void setComparator(Comparator comparator) {
-		org.eclipse.core.runtime.Assert.isTrue(viewerComparator == null);
-		viewerComparator = comparator;
+		org.eclipse.jface.internal.base.Policy.setComparator(comparator);
 	}
 
 	/**
